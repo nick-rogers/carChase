@@ -6,53 +6,6 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js"></script>
-   <script>
-    var line1 = [{"x": 0, "y": 10}, { "x": 10,   "y": 10},  { "x": 60,  "y": 20},
-             { "x": 30,  "y": 100}, { "x": 40,  "y": 40},
-             { "x": 50,  "y": 50},  { "x": 100, "y": 60}, {"x": 70, "y": 70}, 
-             {"x": 80, "y": 80}, {"x": 90, "y": 90}, {"x": 100, "y": 180}, 
-             {"x": 110, "y": 110}, {"x": 120, "y": 60}, {"x": 130, "y": 130}, 
-             {"x": 230, "y": 150}, {"x": 260, "y": 180}, {"x": 280, "y": 200},
-             {"x": 300, "y": 180}, {"x": 340, "y": 230}, {"x": 320, "y": 200},
-             {"x": 140, "y": 190}, {"x": 300, "y": 250}, {"x": 320, "y": 260},
-             {"x": 320, "y": 300}, {"x": 200, "y": 250}, {"x": 230, "y": 180}];
-
-
-// d3 drawing function
-
-function drawLine(input){
-
-
-    // Remove the existing svgs 
-
-    var s = d3.selectAll('svg');
-        s = s.remove();
-
-    var lineFunction = d3.svg.line()
-                         .x(function(d) { return d.x; })
-                         .y(function(d) { return d.y; })
-                         .interpolate("linear");
-
-
-    var svgContainer = d3.select(".vector-container").append("svg")
-                         .attr("width", 500)
-                         .attr("height", 500);
-
-
-    // Drawing the line with the sub-array                 
-
-    var theInput = input;
-    //var arrayLength = line1.length;
-    //console.log(line1.slice(0, theInput));
-    arrayDraw = line1.slice(0, theInput);
-
-    svgContainer.append("path")
-        .attr("d", lineFunction(arrayDraw))
-        .attr("stroke", "#ed4047")
-        .attr("stroke-width", 2.5)
-        .attr("fill", "none");
-}
-    </script>
   </head>
   <body>
   	<div class="container">
