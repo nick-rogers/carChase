@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	text-align: center;
+}
+
+.main {
+	width: 550px;
+	height: 550px;
+	display: inline-block;
+	background-color: lightgrey;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	cursor: pointer;
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.button:hover {
+	opacity: 0.6;
+}
+
+.stop-button {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background-color: red;
+	cursor: pointer;
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.stop-button:hover {
+	opacity: 0.6;
+}
+
+.add-button {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background-color: blue;
+	cursor: pointer;
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.clock-container {
+	display: block;
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	display: inline-block;
+	margin-top: 100px;
+}
+
+.time {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 0px;
+}
+
+.slide-container {
+    width: 100%; /* Width of the outside container */
+    margin-top: 50px;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 98%; /* Full-width */
+    height: 20px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+#sliderValue {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	color: black;
+	font-family: sans-serif;
+}
+
